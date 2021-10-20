@@ -41,5 +41,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.rootObj = commit
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
 }
 
