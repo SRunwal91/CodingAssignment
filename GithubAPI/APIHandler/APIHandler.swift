@@ -10,7 +10,7 @@ import UIKit
 
 class APIHandler {
   
-    func getGitCommits(completionHandler: @escaping (NSArray) -> ()) {
+    func getGitCommits(completionHandler: @escaping ([Root]) -> ()) {
         let repoDetails = RepositoryDetails()
         let urlString = repoDetails.baseUrl + repoDetails.userName + repoDetails.repoName + "/commits"
         var urlComp = URLComponents(string: urlString)!
@@ -27,10 +27,12 @@ class APIHandler {
             guard let data = data else { return }
             do {
                 
-                let result = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSArray
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                let result = try decoder.decode([Root].self, from: data)
                 print("Response : ", result)
 
-                result.forEach({ (object) in
+                result.forEach({ (commit) in
                     completionHandler(result)
                 })
             } catch let decodeError {
