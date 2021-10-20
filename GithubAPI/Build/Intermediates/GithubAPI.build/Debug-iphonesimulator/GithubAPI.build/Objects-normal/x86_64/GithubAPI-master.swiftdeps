@@ -1,7 +1,12 @@
 version: "Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)"
 options: "aee0dc65dd0be5aa77a519a2cd0316d9"
-build_time: [1634738061, 844668000]
+build_time: [1634750228, 860059000]
 inputs:
-  "/Users/sonalirunwal/CodingAssignment/GithubAPI/GithubAPI/ViewController.swift": [1634738050, 798952663]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/Models/Author.swift": [1634750204, 681598683]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/Models/Root.swift": [9223372036, 854775807]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/Models/RepositoryDetails.swift": [1634750019, 274357313]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/Models/Commit.swift": [9223372036, 854775807]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/APIHandler/APIHandler.swift": [1634749781, 743574979]
+  "/Users/sonalirunwal/CodingAssignment/GithubAPI/Controller/ViewController.swift": [1634749846, 200990438]
   "/Users/sonalirunwal/CodingAssignment/GithubAPI/GithubAPI/AppDelegate.swift": [1634738050, 775440899]
   "/Users/sonalirunwal/CodingAssignment/GithubAPI/GithubAPI/SceneDelegate.swift": [1634738050, 794497097]

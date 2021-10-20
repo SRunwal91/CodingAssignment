@@ -17,6 +17,9 @@
 		E90542AD2720570B0075CF18 /* GithubAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542AC2720570B0075CF18 /* GithubAPIUITests.swift */; };
 		E90542C0272082E60075CF18 /* RepositoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542BF272082E60075CF18 /* RepositoryDetails.swift */; };
 		E90542D8272083D00075CF18 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542D7272083D00075CF18 /* APIHandler.swift */; };
+		E90542E32720867D0075CF18 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542E22720867D0075CF18 /* Author.swift */; };
+		E90542E8272086850075CF18 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542E7272086850075CF18 /* Commit.swift */; };
+		E90542ED272086940075CF18 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542EC272086940075CF18 /* Root.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		E90542AE2720570B0075CF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90542BF272082E60075CF18 /* RepositoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetails.swift; sourceTree = "<group>"; };
 		E90542D7272083D00075CF18 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		E90542E22720867D0075CF18 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		E90542E7272086850075CF18 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		E90542EC272086940075CF18 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,9 @@
 			isa = PBXGroup;
 			children = (
 				E90542BF272082E60075CF18 /* RepositoryDetails.swift */,
+				E90542E22720867D0075CF18 /* Author.swift */,
+				E90542E7272086850075CF18 /* Commit.swift */,
+				E90542EC272086940075CF18 /* Root.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,7 +297,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90542E32720867D0075CF18 /* Author.swift in Sources */,
+				E90542ED272086940075CF18 /* Root.swift in Sources */,
 				E90542C0272082E60075CF18 /* RepositoryDetails.swift in Sources */,
+				E90542E8272086850075CF18 /* Commit.swift in Sources */,
 				E90542D8272083D00075CF18 /* APIHandler.swift in Sources */,
 				E905428F272057020075CF18 /* ViewController.swift in Sources */,
 				E905428B272057020075CF18 /* AppDelegate.swift in Sources */,
