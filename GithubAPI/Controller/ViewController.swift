@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableViewCommits: UITableView!
     var commits = [Root]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +24,22 @@ class ViewController: UIViewController {
         let apiHandler = APIHandler()
         apiHandler.getGitCommits { (responseCommits) in
             self.commits = responseCommits
-            print("Response received : ", self.commits)
+            DispatchQueue.main.async {
+                self.tableViewCommits.reloadData()
+            }
         }
     }
 
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return commits.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "commitCell", for: indexPath) as! CommitCellView
+        
+        let commit = commits[indexPath.row]
+        cell.rootObj = commit
+        return cell
+    }
 }
 

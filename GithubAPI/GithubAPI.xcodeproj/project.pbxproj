@@ -20,6 +20,7 @@
 		E90542E32720867D0075CF18 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542E22720867D0075CF18 /* Author.swift */; };
 		E90542E8272086850075CF18 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542E7272086850075CF18 /* Commit.swift */; };
 		E90542ED272086940075CF18 /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542EC272086940075CF18 /* Root.swift */; };
+		E90542FE272094180075CF18 /* CommitCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542FD272094180075CF18 /* CommitCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E90542E22720867D0075CF18 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		E90542E7272086850075CF18 /* Commit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
 		E90542EC272086940075CF18 /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		E90542FD272094180075CF18 /* CommitCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E905427E272057020075CF18 = {
 			isa = PBXGroup;
 			children = (
+				E90542F1272092690075CF18 /* CellView */,
 				E90542D6272083C00075CF18 /* APIHandler */,
 				E90542BE272082C50075CF18 /* Models */,
 				E90542BD2720586B0075CF18 /* Controller */,
@@ -165,6 +168,14 @@
 				E90542D7272083D00075CF18 /* APIHandler.swift */,
 			);
 			path = APIHandler;
+			sourceTree = "<group>";
+		};
+		E90542F1272092690075CF18 /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				E90542FD272094180075CF18 /* CommitCellView.swift */,
+			);
+			path = CellView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +316,7 @@
 				E905428F272057020075CF18 /* ViewController.swift in Sources */,
 				E905428B272057020075CF18 /* AppDelegate.swift in Sources */,
 				E905428D272057020075CF18 /* SceneDelegate.swift in Sources */,
+				E90542FE272094180075CF18 /* CommitCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
