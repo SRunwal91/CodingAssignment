@@ -13,6 +13,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        pullCommits()
+    }
+
+    private func pullCommits() {
+        let apiHandler = APIHandler()
+        apiHandler.getGitCommits { (response) in
+            print("Response received : ", response)
+        }
+    }
 
 
 }

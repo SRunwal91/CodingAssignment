@@ -15,6 +15,8 @@
 		E90542972720570B0075CF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90542952720570B0075CF18 /* LaunchScreen.storyboard */; };
 		E90542A22720570B0075CF18 /* GithubAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542A12720570B0075CF18 /* GithubAPITests.swift */; };
 		E90542AD2720570B0075CF18 /* GithubAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542AC2720570B0075CF18 /* GithubAPIUITests.swift */; };
+		E90542C0272082E60075CF18 /* RepositoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542BF272082E60075CF18 /* RepositoryDetails.swift */; };
+		E90542D8272083D00075CF18 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90542D7272083D00075CF18 /* APIHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E90542A82720570B0075CF18 /* GithubAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90542AC2720570B0075CF18 /* GithubAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPIUITests.swift; sourceTree = "<group>"; };
 		E90542AE2720570B0075CF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90542BF272082E60075CF18 /* RepositoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetails.swift; sourceTree = "<group>"; };
+		E90542D7272083D00075CF18 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 		E905427E272057020075CF18 = {
 			isa = PBXGroup;
 			children = (
+				E90542D6272083C00075CF18 /* APIHandler */,
+				E90542BE272082C50075CF18 /* Models */,
+				E90542BD2720586B0075CF18 /* Controller */,
 				E9054289272057020075CF18 /* GithubAPI */,
 				E90542A02720570B0075CF18 /* GithubAPITests */,
 				E90542AB2720570B0075CF18 /* GithubAPIUITests */,
@@ -101,7 +108,6 @@
 			children = (
 				E905428A272057020075CF18 /* AppDelegate.swift */,
 				E905428C272057020075CF18 /* SceneDelegate.swift */,
-				E905428E272057020075CF18 /* ViewController.swift */,
 				E9054290272057020075CF18 /* Main.storyboard */,
 				E90542932720570B0075CF18 /* Assets.xcassets */,
 				E90542952720570B0075CF18 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				E90542AE2720570B0075CF18 /* Info.plist */,
 			);
 			path = GithubAPIUITests;
+			sourceTree = "<group>";
+		};
+		E90542BD2720586B0075CF18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E905428E272057020075CF18 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E90542BE272082C50075CF18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E90542BF272082E60075CF18 /* RepositoryDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E90542D6272083C00075CF18 /* APIHandler */ = {
+			isa = PBXGroup;
+			children = (
+				E90542D7272083D00075CF18 /* APIHandler.swift */,
+			);
+			path = APIHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90542C0272082E60075CF18 /* RepositoryDetails.swift in Sources */,
+				E90542D8272083D00075CF18 /* APIHandler.swift in Sources */,
 				E905428F272057020075CF18 /* ViewController.swift in Sources */,
 				E905428B272057020075CF18 /* AppDelegate.swift in Sources */,
 				E905428D272057020075CF18 /* SceneDelegate.swift in Sources */,
